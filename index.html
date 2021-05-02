@@ -12,10 +12,7 @@
 </body>
 </html>
 
-
-
-
-
+<!-- Codepen  -->
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 <div class="container">
@@ -23,14 +20,58 @@
     <h1 id="title" class="text-center">Ellatronix Survey Form</h1>
     <p id="description" class="description text-center">Thank you for taking the time to help us improve the platform</p>
     </header>
-    
+
     <form id="survey-form">
+
         <div class="form-group">
             <label id="name-label" for="name">Name</label>
-            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
-            <label for="email">Email</label>
-            <input type="text" id="email" email="email">
+            <input type="text"  id="name" name="name" class="form-control" placeholder="Enter your name" required>
         </div>
+
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="text" id="email" email="email" class="form-control" placeholder="Enter your Email" required>
+        </div>
+
+        <div id="form-group">
+            <label class="number-label" for="number">Age<span class="clue">(optional)</span></label>
+            <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" required>
+
+        </div>
+
+        <div class="form-group">
+            <p>Which option best describes your current role?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Select current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>Would you recommend Ellatronix to a friend?</p>
+            <label>
+                <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked/>Definitely
+            </label>
+            <label>
+                <input name="user-recommend" value="maybe" type="radio" class="input-radio" checked/>Maybe
+            </label>
+            <label>
+                <input name="user-recommend" value="not-sure" type="radio" class="input-radio" checked/>Not Sure
+            </label>
+
+
+            <div class="form-group">
+                <button type="submit" onclick="alert('Please complete all fields')" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+
+        </div>
+
     </form>
 
 </div>
