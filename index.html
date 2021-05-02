@@ -22,19 +22,19 @@
     </header>
 
     <form id="survey-form">
-
+<!-- Name -->
         <div class="form-group">
             <label id="name-label" for="name">Name</label>
             <input type="text"  id="name" name="name" class="form-control" placeholder="Enter your name" required>
         </div>
-
+<!-- Email -->
         <div class="form-group">
             <label id="email-label" for="email">Email</label>
-            <input type="text" id="email" email="email" class="form-control" placeholder="Enter your Email" required>
+            <input type="email" id="email" email="email" class="form-control" placeholder="Enter your Email" required>
         </div>
-
-        <div id="form-group">
-            <label class="number-label" for="number">Age<span class="clue">(optional)</span></label>
+<!-- Age -->
+        <div class="form-group">
+            <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
             <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" required>
         </div>
 
@@ -78,37 +78,25 @@
         <div class="form-group">
             <p>What would you like to see improved? <span class="clue">(Check all that apply)</span> </p>
             <label>
-                <input name="user-recommend" value="Front-end Projects" type="checkbox" class="input-checkbox"/>Front-end Projects
+                <input name="user-recommend" value="frontendprojects" type="checkbox" class="input-checkbox"/>Front-end Projects
             </label>
             <label>
-                <input name="user-recommend" value="Back-end Projects" type="checkbox" class="input-checkbox"/>Back-end Projects
+                <input name="user-recommend" value="backendprojects" type="checkbox" class="input-checkbox"/>Back-end Projects
             </label>
             <label>
                 <input name="user-recommend" value="datavisulaization" type="checkbox" class="input-checkbox"/>Data Visulaization
             </label>
             <label>
-                <input name="user-recommend" value="definitely" type="checkbox" class="input-checkbox"/>Definitely
+                <input name="user-recommend" value="devops" type="checkbox" class="input-checkbox"/>DevOps
             </label>
             <label>
-                <input name="user-recommend" value="maybe" type="checkbox" class="input-checkbox"/>Maybe
+                <input name="user-recommend" value="datasciences" type="checkbox" class="input-checkbox"/>Data Sciences
             </label>
             <label>
-                <input name="user-recommend" value="not-sure" type="checkbox" class="input-checkbox"/>Not Sure
+                <input name="user-recommend" value="challenges" type="checkbox" class="input-checkbox"/>Challenges
             </label>
             <label>
-                <input name="user-recommend" value="not-sure" type="checkbox" class="input-checkbox"/>Not Sure
-            </label>
-            <label>
-                <input name="user-recommend" value="not-sure" type="checkbox" class="input-checkbox"/>Not Sure
-            </label>
-            <label>
-                <input name="user-recommend" value="not-sure" type="checkbox" class="input-checkbox"/>Not Sure
-            </label>
-            <label>
-                <input name="user-recommend" value="not-sure" type="checkbox" class="input-checkbox"/>Not Sure
-            </label>
-            <label>
-                <input name="user-recommend" value="not-sure" type="checkbox" class="input-checkbox"/>Not Sure
+                <input name="user-recommend" value="forum" type="checkbox" class="input-checkbox"/>Forum
             </label>
             <label>
                 <input name="user-recommend" value="jobinterviewprep" type="checkbox" class="input-checkbox"/>Job Interview Prep
@@ -117,16 +105,14 @@
 
         <div class="form-group">
         <p>Any comments or suggestions?</p>
-        
+        <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comment here..."></textarea>
 
-        </div>
-
+        <div>
             <div class="form-group">
-                <button type="submit"  id="submit" class="submit-button" onclick="alert('Please complete all fields')">
+                <button type="submit"  id="submit" class="submit-button">
                     Submit
                 </button>
             </div>
-
         </div>
 
     </form>
